@@ -63,7 +63,8 @@ const sendEmailMailjet = async (receiverEmail, fileID, senderName = "Encrypt Sha
               ],
               Subject: "Here is your File ID!",
               TextPart: `Dear user, here is your File ID: ${fileID}`,
-              HTMLPart: `<h3>Dear user,</h3><br/> Download page: <a href='http://localhost:5173/download'>download page link</a> <br />Here is your File ID: <strong>${fileID}</strong><br /><br /><b>Because of our security policy we don't share passwords. You need to ask the sender for it.</b>`
+              HTMLPart: `<h3>Dear user,</h3><br/> Download page: <a href='https://secure-share-front.vercel.app/download'>download page link</a> <br />Here is your File ID: <strong>${fileID}</strong><br /><br /><b>Because of our security policy we don't share passwords. You need to ask the sender for it.</b>`
+
             }
           ]
         });
